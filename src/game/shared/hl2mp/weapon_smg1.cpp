@@ -49,7 +49,8 @@ public:
 
 	virtual void Equip( CBaseCombatCharacter *pOwner );
 	bool	Reload( void );
-
+	//31081604: With 0.005f refire rate, the clip empties a little too fast. Since the default max ammo is so low, I would recommend raising the clip ammo much higher and reducing this fire rate a little. 
+	//I know some of the edits are in the script file, I definitely recommend still increasing the starting ammo and ammo per clip. 
 	float	GetFireRate( void ) { return .005f; }	// 13.3hz
 	Activity	GetPrimaryAttackActivity( void );
 
